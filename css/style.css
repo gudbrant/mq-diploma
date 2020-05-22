@@ -1,23 +1,38 @@
 @font-face {
-    font-family: "Open Sans";
-    src: url("..font/OpenSans-Regular.ttf") format("ttf");
-    src: url("..font/OpenSans-Regular.woff") format("woff");
-    src: url("..font/OpenSans-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Open Sans';
+    src: url('../fonts/open_sans.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/open_sans.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/open_sans.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open_sans.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/open_sans.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open_sans.svg#open_sans') format('svg');
+    /* Chrome < 4, Legacy iOS */
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("..font/OpenSans-Bold.woff") format("ttf");
-    src: url("..font/OpenSans-Bold.woff2") format("woff");
-    src: url("..font/OpenSans-Bold.ttf") format("woff2");
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/open_sans_bold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/open_sans_bold.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/open_sans_bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open_sans_bold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/open_sans_bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open_sans_bold.svg#open_sans_bold') format('svg');
+    /* Chrome < 4, Legacy iOS */
 }
 
 html {
     font-family: "Open Sans";
+    font-size: 10px;
 }
 
 /* __________ fonts __________ */
@@ -28,6 +43,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Open Sans Bold';
     font-size: inherit;
 }
 
@@ -44,6 +60,7 @@ h6 {
 }
 
 .app_botton_bold {
+    font-family: 'Open Sans Bold';
     font-weight: bold;
 }
 
@@ -53,13 +70,15 @@ h6 {
 }
 
 .card_title,
-.promotion_card_title {
+.promotion_card_title,
+.promotion_card_title_even {
     font-weight: bold;
     text-transform: uppercase;
     color: #c1c1c1;
 }
 
 .card_number {
+    font-family: 'Open Sans Bold';
     font-weight: bold;
     color: #000000;
 }
@@ -298,18 +317,20 @@ svg {
         font-size: 15px;
     }
 
-    .promotion_card_title_text {
+    .promotion_card_title_text,
+    .promotion_card_title_text_even {
         font-size: 28px;
     }
 
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_description_even {
         font-size: 16px;
     }
-    
+
     .footer_first_main_titile {
         font-size: 32px;
     }
-    
+
     .footer_second_main_title {
         font-size: 14px;
     }
@@ -450,12 +471,12 @@ svg {
         min-height: 351px;
         background-image: url(../images/be-active_960.jpg);
     }
-    
+
     .promotion_card_img_two {
         min-height: 351px;
         background-image: url(../images/find-contact_960.jpg);
     }
-    
+
     .promotion_card_img_three {
         min-height: 351px;
         background-image: url(../images/work-it_960.jpg);
@@ -474,29 +495,33 @@ svg {
     }
 
     .promotion_card_title,
-    .promotion_card_description {
+    .promotion_card_title_text_even,
+    .promotion_card_description,
+    .promotion_card_description_even {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .promotion_card_title {
+    .promotion_card_title,
+    .promotion_card_title_text_even {
         margin-top: 28px;
     }
 
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_description_even {
         margin-top: 15px;
         margin-bottom: 81px;
     }
 
 
     /* __________ footer __________ */
-    
+
     .footer_container {
         background-image: url(../images/game_767.jpg);
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .footer_top_container {
         flex-direction: column;
         align-items: center;
@@ -520,9 +545,9 @@ svg {
         margin-top: 75px;
         margin-bottom: 82px;
     }
-    
+
     .footer_logo_text_conteiner {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
 
@@ -559,22 +584,24 @@ svg {
         font-size: 16px;
     }
 
-    .promotion_card_title_text {
+    .promotion_card_title_text,
+    .promotion_card_title_text_even {
         font-size: 80px;
     }
 
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_description_even {
         font-size: 24px;
     }
 
     .promotion_card_number {
         font-size: 24px;
     }
-    
+
     .footer_first_main_titile {
         font-size: 80px;
     }
-    
+
     .footer_second_main_title {
         font-size: 36px;
     }
@@ -665,7 +692,7 @@ svg {
 
     .info_image_container {
         position: absolute;
-        left: -160px;
+        left: -15%;
         padding-top: 100px;
     }
 
@@ -676,11 +703,11 @@ svg {
     }
 
     .athlets_image {
-        width: 100%;
+        width: 58vw;
     }
 
     .players_image {
-        width: 100%;
+        width: 50vw;
     }
 
     .info_card_conteiner {
@@ -747,12 +774,12 @@ svg {
         min-height: 584px;
         background-image: url(../images/be-active_960.jpg);
     }
-    
+
     .promotion_card_img_two {
         min-height: 584px;
         background-image: url(../images/find-contact_960.jpg);
     }
-    
+
     .promotion_card_img_three {
         min-height: 584px;
         background-image: url(../images/work-it_960.jpg);
@@ -771,28 +798,32 @@ svg {
     }
 
     .promotion_card_title,
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_title_even,
+    .promotion_card_description_even {
         padding-left: 31px;
         padding-right: 85px;
     }
 
-    .promotion_card_title {
+    .promotion_card_title,
+    .promotion_card_title_even {
         margin-top: 83px;
     }
 
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_description_even {
         margin-top: 11px;
         margin-bottom: 97px;
     }
-    
+
     /* __________ footer __________ */
-    
+
     .footer_container {
         background-image: url(../images/game_1280.jpg);
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .footer_top_container {
         flex-direction: column;
         align-items: center;
@@ -815,7 +846,7 @@ svg {
         margin-top: 280px;
         margin-bottom: 54px;
     }
-    
+
     .footer_logo_text_conteiner {
         margin-bottom: 8px;
     }
@@ -851,23 +882,25 @@ svg {
         font-size: 20px;
     }
 
-    .promotion_card_title_text {
-        font-size: 80px;
+    .promotion_card_title_text,
+    .promotion_card_title_text_even {
+        font-size: 4.166666666666667vw;
     }
 
-    .promotion_card_description {
+    .promotion_card_description,
+    .promotion_card_description_even {
         font-size: 24px;
     }
 
     .promotion_card_number {
         font-size: 24px;
     }
-    
+
     .footer_first_main_titile {
         font-size: 80px;
         line-height: 55px
     }
-    
+
     .footer_second_main_title {
         font-size: 30px;
     }
@@ -1038,18 +1071,18 @@ svg {
     .promotion_card {
         display: flex;
     }
-    
+
     .promotion_card_img_one {
         width: 50%;
         background-image: url(../images/be-active_1024.jpg);
     }
-    
+
     .promotion_card_img_two {
         width: 50%;
         background-image: url(../images/find-contact_1024.jpg);
         order: 2;
     }
-    
+
     .promotion_card_img_three {
         width: 50%;
         background-image: url(../images/work-it_1024.jpg);
@@ -1058,7 +1091,7 @@ svg {
     .promotion_card_description_container {
         width: 50%
     }
-    
+
     .promotion_image {
         width: 100%;
         height: 100%;
@@ -1068,10 +1101,10 @@ svg {
         position: absolute;
         width: 168px;
         height: 168px;
-        top: 40%;
+        top: 26%;
         right: -84px;
     }
-    
+
     .promotion_card_number_even {
         left: -84px;
     }
@@ -1081,26 +1114,37 @@ svg {
     }
 
     .promotion_card_title {
-        margin-top: 231px;
-        padding-left: 13%;
-        
+        margin-top: 24%;
+        padding-left: 128px;
+    }
+
+    .promotion_card_title_even {
+        margin-top: 24%;
+        padding-left: 19%;
     }
 
     .promotion_card_description {
         margin-top: 81px;
         margin-bottom: 246px;
-        padding-left: 13%;
+        margin-left: 128px;
         padding-right: 26%
     }
-    
+
+    .promotion_card_description_even {
+        margin-top: 81px;
+        margin-bottom: 246px;
+        margin-left: 19%;
+        padding-right: 131px;
+    }
+
     /* __________ footer __________ */
-    
+
     .footer_container {
         background-image: url(../images/game_1920.jpg);
         padding-left: 20px;
         padding-right: 20px;
     }
-    
+
     .footer_top_container {
         justify-content: center;
         margin-top: 229px;
@@ -1117,7 +1161,7 @@ svg {
         position: relative;
         margin-left: 36px;
     }
-    
+
     .footer_second_main_title {
         margin-top: 20px;
     }
@@ -1126,9 +1170,8 @@ svg {
         margin-top: 150px;
         margin-bottom: 261px;
     }
-    
+
     .footer_logo_text_conteiner {
         margin-bottom: 52px;
     }
 }
-
