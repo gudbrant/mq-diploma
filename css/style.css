@@ -702,14 +702,6 @@ svg {
         padding-top: 40px;
     }
 
-    .athlets_image {
-        width: 100%;
-    }
-
-    .players_image {
-        width: 50vw;
-    }
-
     .info_card_conteiner {
         flex-direction: column;
 
@@ -991,15 +983,13 @@ svg {
 
     .info_image_container {
         position: absolute;
-        height: 100%;
         right: 50%;
         padding-top: 45px;
     }
 
     .info_image_palyer_container {
         position: absolute;
-        height: 100%;
-        left: 40%;
+        left: 45%;
         padding-top: 27px;
     }
 
