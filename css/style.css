@@ -692,7 +692,7 @@ svg {
 
     .info_image_container {
         position: absolute;
-        left: -15%;
+        left: -165px;
         padding-top: 100px;
     }
 
@@ -703,7 +703,7 @@ svg {
     }
 
     .athlets_image {
-        width: 58vw;
+        width: 100%;
     }
 
     .players_image {
